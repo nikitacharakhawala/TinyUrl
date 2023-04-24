@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/v1")
+
 public class TinyUrlController
 {
-    @GetMapping("/getGreeting")
+    @GetMapping("/greetings")
     public String getGreeting(){
         return "Namaste";
     }
