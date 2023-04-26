@@ -19,7 +19,7 @@ public class TinyUrlControllerTest {
     private MockMvc mvc;
     @Test
     public void getGreeting() throws Exception {
-        mvc.perform(MockMvcRequestBuilders.get("/greetings")).andExpect(status().isOk()).andExpect(content().string(equalTo("Namaste")));
+        mvc.perform(MockMvcRequestBuilders.get("/")).andExpect(status().isOk()).andExpect(content().string(equalTo("Namaste!")));
     }
 
 }

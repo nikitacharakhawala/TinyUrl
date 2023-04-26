@@ -19,6 +19,7 @@ class TinyUrlApplicationTests {
 	private TinyUrlController controller;
 	@Test
 	void contextLoads() {
+		System.out.println("hj::"+controller);
 		assertThat(controller).isNotNull();
 	}
 
