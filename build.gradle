@@ -1,16 +1,16 @@
 plugins {
 	id 'java'
 	id 'war'
-	id 'org.springframework.boot' version "${springVersion}"
-	id 'io.spring.dependency-management' version "${dependencyManagementVersion}"
+	id 'org.springframework.boot' version "${SPRING_BOOT_VER}"
+	id 'io.spring.dependency-management' version "${SPRING_DEP_MAN_VERSION}"
 }
 
 group = 'com.tinyurl'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
+sourceCompatibility = "$JAVA_VERSION"
 
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 apply plugin: 'io.spring.dependency-management'
@@ -19,9 +19,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	implementation "org.slf4j:slf4j-api:${slf4jVersion}"
+	implementation "org.slf4j:slf4j-api:${SL4J_VER}"
 }
 
-tasks.named('unitTests') {
+tasks.named('test') {
 	useJUnitPlatform()
 }

@@ -1,4 +1,4 @@
-package com.tinyurl.tinyurl.models;
+package com.tinyurl.model;
 
 public class RegisterEntity {
     private String url;
