@@ -1,7 +1,7 @@
 package com.tinyurl.tinyurl;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import com.tinyurl.tinyurl.controller.TinyUrlController;
+import com.tinyurl.controller.TinyUrlController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -16,5 +16,4 @@ class TinyUrlApplicationTests {
 	void contextLoads() {
 		assertThat(controller).isNotNull();
 	}
-
 }
